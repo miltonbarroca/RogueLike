@@ -17,10 +17,10 @@ player = Actor(
     level=Level(level_up_base=200),
 )
 
-orc = Actor(
-    char="o",
-    color=(63, 127, 63),
-    name="Orc",
+bot = Actor(
+    char="b",
+    color=(100, 150, 255),
+    name="Secure Bot",
     ai_cls=HostileEnemy,
     equipment=Equipment(),
     fighter=Fighter(hp=10, base_defense=0, base_power=3),
@@ -74,4 +74,9 @@ leather_armor = Item(
     equippable=equippable.LeatherArmor(),
 )
 
-chain_mail = Item(char="[", color=(139, 69, 19), name="Chain Mail", equippable=equippable.ChainMail())
+chain_mail = Item(
+    char="[", 
+    color=(139, 69, 19), 
+    name="Chain Mail", 
+    equippable=equippable.ChainMail()
+    )

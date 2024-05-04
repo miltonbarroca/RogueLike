@@ -7,7 +7,7 @@ import lzma
 import pickle
 import traceback
 
-from PIL import Image  # type: ignore
+from PIL import Image
 import tcod
 
 from tcod import libtcodpy
@@ -18,7 +18,7 @@ import entity_factories
 import input_handlers
 
 # Load the background image.  Pillow returns an object convertable into a NumPy array.
-background_image = Image.open("data/menu_background.png")
+#background_image = Image.open("data/menu_background.png")
 
 
 def new_game() -> Engine:
@@ -76,7 +76,7 @@ class MainMenu(input_handlers.BaseEventHandler):
 
     def on_render(self, console: tcod.console.Console) -> None:
         """Render the main menu on a background image."""
-        console.draw_semigraphics(background_image, 0, 0)
+        #console.draw_semigraphics(background_image, 0, 0)
 
         console.print(
             console.width // 2,
